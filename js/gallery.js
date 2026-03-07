@@ -119,6 +119,9 @@ showCurrentIndexImage()
 function showImage(index){
 currentIndex = index
 showCurrentIndexImage()
+}function showImage(index){
+currentIndex = index
+showCurrentIndexImage()
 }
 
 function createGalleryPreview(){
@@ -132,6 +135,47 @@ for(let i=0;i<IMAGE.length;i++){
 const currentImg = IMAGE[i]
 
 previewHTML += `<img src='${currentImg.url}' class='preview-img' onclick='showImage(${i})'>`
+
+}
+
+galleryPreviewContainer.innerHTML = previewHTML
+
+}
+
+createGalleryPreview()
+showCurrentIndexImage()
+
+
+function like(element){
+
+if(element.classList.contains("active")){
+element.classList.remove("active")
+element.innerText = "♡"
+}
+else{
+element.classList.add("active")
+element.innerText = "♥"
+}
+
+}
+
+
+function createGalleryPreview(){
+
+const galleryPreviewContainer = document.getElementById("gallery-preview")
+
+let previewHTML = ""
+
+for(let i=0;i<IMAGE.length;i++){
+
+const currentImg = IMAGE[i]
+
+previewHTML += `
+<div class="img-box">
+<img src='${currentImg.url}' class='preview-img' onclick='showImage(${i})'>
+<span class="heart" onclick="like(this)">♡</span>
+</div>
+`
 
 }
 
