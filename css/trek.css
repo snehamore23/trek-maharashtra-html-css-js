@@ -1,4 +1,183 @@
-body{
-    margin: opx;
-    padding: 0px;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
+}
+        body{
+            font-family: Arial, sans-serif; 
+            background-color: rgb(255, 252, 241); 
+        }
+.navbar-main-container {
+    background-color: #31443b;
+    color: #f7f5eb ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    width: 100%;
+    z-index: 1000;
+}
+
+.main-container {
+    height: 600px;
+    width: 1527px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-name {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family:"Poppins" ,sans-serif;
+}
+
+.main-logo {
+    border-radius: 60px;
+
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    color: #f7f5eb ;
+}
+
+.nav-text-container {
+    color:#f7f5eb ;
+     text-decoration: none; 
+     
+}
+.nav-text-container:hover{
+    color: #f0c76b ;            
+}
+
+.auth-links-containar {
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.main-container {
+    height: 600px;
+    width: 1527px;
+}
+/* HAMBURGER BUTTON */
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.navbar-main-container{
+flex-wrap:wrap;
+}
+
+.nav-links-container{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+background:#31443b;
+}
+
+.auth-links-containar{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+background:#31443b;
+}
+
+.nav-links-container.active,
+.auth-links-containar.active{
+display:flex;
+}
+
+}
+/* ================= TABLET (601px – 992px) ================= */
+@media screen and (max-width:992px){
+
+.navbar-main-container{
+    flex-wrap:wrap;
+    padding:10px;
+}
+
+.nav-links-container{
+    gap:15px;
+}
+
+.main-container{
+    width:100%;
+}
+
+}
+
+/* ================= LARGE SCREEN ================= */
+@media screen and (min-width:1200px){
+
+.main-container{
+    width:100%;
+}
+
+}
+
+.front{
+    height:70vh;
+    background:url('./../images/trek-image.jpg') center/cover no-repeat;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.55);
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.overlay h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.overlay p{
+    font-size:20px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.filter input, .filter select {
+  padding: 10px;
+  width: 200px;
 }
