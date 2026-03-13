@@ -71,7 +71,7 @@ body {
 
 .main-container {
     height: 600px;
-    width: 1527px;
+    width: 100%;
 }
 
 /* HAMBURGER BUTTON */
@@ -110,7 +110,8 @@ body {
 }
 
 .contact-box {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     gap: 25px;
 }
@@ -159,18 +160,19 @@ textarea {
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 12px;
-    background: #094438;;
-    color: white;
+   background-color:  #094438;;
+    color: var(--white);
     border: none;
-    border-radius: 8px;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
-    background: #094438;;
+   transform: scale(1.05);
+    background-color: #094438;
 }
 
 .info-section {
@@ -203,6 +205,10 @@ textarea {
 .card h3 {
     color: #2e7d32;
     margin-bottom: 5px;
+}
+
+.follow-card {
+    padding: 10px;
 }
 
 .social-icons img {
@@ -353,7 +359,7 @@ footer {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:768px) {
 
     .contact-box {
         width: 100%;
@@ -418,6 +424,10 @@ footer {
         padding: 20px;
     }
 
+    .inquiry-section {
+        display: none;
+    }
+
     .card {
         padding: 15px;
     }
@@ -430,6 +440,33 @@ footer {
         height: 220px;
     }
 
+}
+
+@media (max-width: 480px) {
+    .form-content {
+        padding: 15px;
+    }
+
+    .form-image {
+        display: none;
+    }
+
+    input, textarea {
+        padding: 8px;
+        margin: 8px 0;
+    }
+
+    .submit-btn {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .trek-card {
+        padding: 10px;
+    }
 }
 
 /* ===== FOOTER ===== */
@@ -522,3 +559,4 @@ footer {
         margin-bottom: 20px;
     }
 }
+
