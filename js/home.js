@@ -1,7 +1,11 @@
 /* ================= MOBILE MENU ================= */
 
 function toggleMenu(){
-    document.getElementById("navLinks").classList.toggle("show");
+    let menu = document.getElementById("navMenu");
+let auth = document.querySelector(".auth-links-containar");
+
+menu.classList.toggle("active");
+auth.classList.toggle("active");
 }
 
 
