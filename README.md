@@ -15,14 +15,14 @@ Built using <b>HTML, CSS and JavaScript</b>.
 
 ## 🌐 Live Demo
 
-🔗 https://pranalishinde06.github.io/trek-maharashtra-html-css-js/
+🔗 https://trek-maharashtra.netlify.app/
 
 ---
 
 
 ## 📸 Website Preview
 
-<img src="./images/homepage.png" width="900">
+<img src="./images/common-image/readme-home-page.png" width="900">
 ---
 
 ## 🏔️ Popular Treks
