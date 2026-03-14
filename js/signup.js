@@ -1,10 +1,10 @@
-function toggleMenu(){
+function toggleMenu() {
 
-let menu = document.getElementById("navMenu");
-let auth = document.querySelector(".auth-links-containar");
+    let menu = document.getElementById("navMenu");
+    let auth = document.querySelector(".auth-links-containar");
 
-menu.classList.toggle("active");
-auth.classList.toggle("active");
+    menu.classList.toggle("active");
+    auth.classList.toggle("active");
 }
 
 
@@ -33,7 +33,7 @@ function togglePassword(id, icon) {
     if (input.type === "password") {
         input.type = "text";
         icon.src = "../images/hide.png";
-    } 
+    }
     else {
         input.type = "password";
         icon.src = "../images/view.png";
@@ -44,29 +44,29 @@ function togglePassword(id, icon) {
 
 
 
-function registerUser(){
+function registerUser() {
 
-let name = document.getElementById("name").value;
-let email = document.getElementById("email").value;
-let password = document.getElementById("password").value;
-let confirmPassword = document.getElementById("confirmPassword").value;
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmPassword").value;
 
-let error = document.getElementById("errorMsg");
-let success = document.getElementById("successMsg");
+    let error = document.getElementById("errorMsg");
+    let success = document.getElementById("successMsg");
 
-error.innerText = "";
-success.style.display = "none";
+    error.innerText = "";
+    success.style.display = "none";
 
-if(name === "" || email === "" || password === "" || confirmPassword === ""){
-    error.innerText = "Please fill all information";
-    return;
-}
+    if (name === "" || email === "" || password === "" || confirmPassword === "") {
+        error.innerText = "Please fill all information";
+        return;
+    }
 
-if(password !== confirmPassword){
-    error.innerText = "Password and Confirm Password must be same";
-    return;
-}
+    if (password !== confirmPassword) {
+        error.innerText = "Password and Confirm Password must be same";
+        return;
+    }
 
-success.style.display = "block";
+    success.style.display = "block";
 
 }
