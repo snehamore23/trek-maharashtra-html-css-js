@@ -30,7 +30,7 @@ Built using <b>HTML, CSS and JavaScript</b>.
 | Trek | Image |
 |-----|------|
 | Rajgad | <img src="./images/Rajgad%20Fort.jpeg" width="150"> |
-| Lohagad | <img src="./images/lohagad-trek.jpg.png" width="150"> |
+|
 | Harishchandragad | <img src="./images/harishchandragad.jpg" width="150"> |
 | 
 
