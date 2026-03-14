@@ -19,7 +19,7 @@ Built using <b>HTML, CSS and JavaScript</b>.
 
 ---
 
-## 📸 Website Preview
+
 ## 📸 Website Preview
 
 <img src="./images/homepage.png" width="900">
