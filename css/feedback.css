@@ -1,15 +1,13 @@
-
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-body{
-    background:#f7f5eb;
-    font-family:Arial, sans-serif;
-}
+        body{
+            font-family: Arial, sans-serif; 
+            background-color: rgb(255, 252, 241); 
+        }
 .navbar-main-container {
     background-color: #31443b;
     color: #f7f5eb ;
@@ -68,46 +66,10 @@ body{
     cursor: pointer;
 }
 
-
 .main-container {
     height: 600px;
     width: 1527px;
 }
-/* ================= MOBILE (max-width:600px) ================= */
-@media screen and (max-width:600px){
-
-.navbar-main-container{
-    flex-direction: column;
-    padding:10px;
-}
-
-.logo-container{
-    gap:10px;
-}
-
-.project-name{
-    font-size:18px;
-}
-
-
-.nav-links-container{
-    flex-direction: column;
-    align-items:center;
-    gap:10px;
-}
-
-.auth-links-containar{
-    margin-top:10px;
-}
-
-
-.main-container{
-    width:100%;
-    height:auto;
-}
-
-}
-
 /* HAMBURGER BUTTON */
 .menu-toggle{
 display:none;
@@ -122,8 +84,33 @@ color:white;
 .menu-toggle{
 display:block;
 }
+
+.navbar-main-container{
+flex-wrap:wrap;
 }
 
+.nav-links-container{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+background:#31443b;
+}
+
+.auth-links-containar{
+display:none;
+flex-direction:column;
+width:100%;
+text-align:center;
+background:#31443b;
+}
+
+.nav-links-container.active,
+.auth-links-containar.active{
+display:flex;
+}
+
+}
 /* ================= TABLET (601px – 992px) ================= */
 @media screen and (max-width:992px){
 
@@ -148,7 +135,10 @@ display:block;
 .main-container{
     width:100%;
 }
+
 }
+
+
 
 
 /* MAIN CONTAINER */
