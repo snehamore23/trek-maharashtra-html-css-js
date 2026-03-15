@@ -55,7 +55,6 @@ document.getElementById("feedbackForm")
 
         newCard.innerHTML = `
             <div class="profile">
-                <img src="https://via.placeholder.com/60">
                 <div>
                     <h4>${name}</h4>
                     <small>User</small>
